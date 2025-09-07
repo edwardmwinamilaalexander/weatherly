@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+     <link rel="stylesheet" href="{% static 'weatherapp/css/style.css' %}"
+</head>
+<body>
+    <h1>Weatherly App</h1>
+
+    <!-- Form to enter city -->
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="city" placeholder="Enter city">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <hr>
+
+    <!-- Display weather data -->
+    {% if weather_data %}
+        {% if weather_data.error %}
+            <p style="color:red;">{{ weather_data.error }}</p>
+        {% else %}
+            <h2>{{ weather_data.city }}, {{ weather_data.country }}</h2>
+            <img src="{{ weather_data.icon }}" alt="Weather Icon">
+            <p>Description: {{ weather_data.description }}</p>
+            <p>Temperature: {{ weather_data.temperature }}°C</p>
+            <p>Feels like: {{ weather_data.feelslike }}°C</p>
+            <p>Humidity: {{ weather_data.humidity }}%</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
