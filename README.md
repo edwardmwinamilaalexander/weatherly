@@ -30,3 +30,5 @@ A sleek and responsive Django-based weather application that provides real-time 
    ```bash
    git clone https://github.com/edwardmwinamilaalexander/weatherly
    cd weatherly
+
+   ![Current Weather View for London](screenshots/your-image-name.png)
