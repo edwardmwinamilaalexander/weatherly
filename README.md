@@ -2,6 +2,13 @@
 
 A sleek and responsive Django-based weather application that provides real-time weather information for cities worldwide. Built with Python and powered by the Weatherstack API, this app features a clean, gradient-based UI to display temperature, humidity, and atmospheric conditions.
 
+
+
+
+<img width="936" height="457" alt="londonTemp" src="https://github.com/user-attachments/assets/ba7178ec-752c-4193-af54-47716922a212" />
+
+
+
 ## ✨ Features
 
 - **Real-time Search**: Get instant weather updates by city name
@@ -31,4 +38,5 @@ A sleek and responsive Django-based weather application that provides real-time 
    git clone https://github.com/edwardmwinamilaalexander/weatherly
    cd weatherly
 
-   ![Current Weather View for London](screenshots/your-image-name.png)
+
+
